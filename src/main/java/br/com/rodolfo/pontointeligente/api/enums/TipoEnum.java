@@ -2,7 +2,11 @@ package br.com.rodolfo.pontointeligente.api.enums;
 
 public enum TipoEnum {
 
-    ROLE_ADMIN,
-    ROLE_USUARIO;
+    INICIO_TRABALHO,
+    TERMINO_TRABALHO,
+    INICIO_ALMOCO,
+    TERMINO_ALMOCO,
+    INICIO_PAUSA,
+    TERMINO_PAUSA;
 
 }
