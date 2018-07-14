@@ -186,7 +186,7 @@ public class Lancamento implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("Lancamento [id = %d, data = %t, descricao = %s, localizacao = %s, dataCriacao = %t, dataAtualizacao = %t, tipo = %s, funcionario = %s]", id, data, descricao, localizacao, dataCriacao, dataAtualizacao, tipo.toString(), funcionario);
+        return String.format("Lancamento [id = %d, data = %t, descricao = %s, localizacao = %s, dataCriacao = %ta, dataAtualizacao = %ta, tipo = %s, funcionario = %s]", id, data, descricao, localizacao, dataCriacao, dataAtualizacao, tipo.toString(), funcionario);
     }
 
 }
