@@ -293,7 +293,7 @@ public class Funcionario implements Serializable{
 
     @Override
     public String toString() {
-        return String.format("Funcionario [id = %d, nome = %s, email = %s, senha = %s, cpf = %s, valorHora = %d, qtdHorasTrabalhoDia = %.2f, qtHorasAlmoco = %.2f, perfil = %s, dataCriacao = %ta, dataAtualizacao = %ta, empresa = %s]", id, nome, email, senha, cpf, valorHora, qtdHorasTrabalhoDia, qtdHorasAlmoco, perfil.toString(), dataCriacao, dataAtualizacao, empresa);
+        return String.format("Funcionario [id = %d, nome = %s, email = %s, senha = %s, cpf = %s, valorHora = %.2f, qtdHorasTrabalhoDia = %.2f, qtHorasAlmoco = %.2f, perfil = %s, dataCriacao = %ta, dataAtualizacao = %ta, empresa = %s]", id, nome, email, senha, cpf, valorHora, qtdHorasTrabalhoDia, qtdHorasAlmoco, perfil.toString(), dataCriacao, dataAtualizacao, empresa);
     }
 
 }
