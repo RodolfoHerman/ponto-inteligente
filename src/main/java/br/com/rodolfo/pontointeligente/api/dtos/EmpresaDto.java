@@ -55,7 +55,7 @@ public class EmpresaDto {
 
     @Override
     public String toString() {
-        return String.format("EmpresaDto [id = %d, razaoSocial = %s, cnpj = %s]", id, razaoSocial, cnpj);
+        return "EmpresaDto [ id = " + id + ", razaoSocial = " + razaoSocial + ", cnpj = " + cnpj + " ]";
     }
 
 }

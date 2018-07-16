@@ -106,7 +106,7 @@ public class LancamentoDto {
 
     @Override
     public String toString() {
-        return String.format("LancamentoDto [id = %d, data = %s, tipo = %s, descricao = %s, localizacao = %s, funcionarioId = %d]", id.isPresent() ? id.get() : 0, data, tipo, descricao, localizacao, funcionarioId);
+        return "LancamentoDto [ id = " + id + ", data = " + data + ", tipo = " + tipo + ", descricao = " + descricao + ", localizacao = " + localizacao + ", funcionarioId = " + funcionarioId + " ]";
     }
 
 }

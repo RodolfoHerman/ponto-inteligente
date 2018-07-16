@@ -139,7 +139,7 @@ public class CadastroPJDto {
 
     @Override
     public String toString() {
-        return String.format("CadastroPJDto [id = %d, nome = %s, email = %s, senha = %s, cpf = %s, razaoSocial = %s, cnpj = %s]", id, nome, email, senha, cpf, razaoSocial, cnpj);
+        return "CadastroPJDto [ id = " + id + ", nome = " + nome + ", email = " + email + ", senha = " + senha + ", cpf = " + cpf + ", razaoSocial = " + razaoSocial+ ", cnpj = " + cnpj + " ]";
     }
 
 }

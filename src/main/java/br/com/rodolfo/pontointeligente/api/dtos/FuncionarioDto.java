@@ -129,7 +129,7 @@ public class FuncionarioDto {
 
     @Override
     public String toString() {
-        return String.format("Funcionario [id = %d, nome = %s, email = %s, senha = %s, valorHora = %s, qtdHorasTrabalhoDia = %s, qtdHorasAlmoco = %s]", id, nome, email, senha, valorHora, qtdHorasTrabalhoDia, qtdHorasAlmoco);
+        return "FuncionarioDto [ id = " + id + ", nome = " + nome + ", email = " + email + ", senha = " + senha + ", valorHora = " + valorHora + ", qtdHorasTrabalhoDia = " + qtdHorasTrabalhoDia + ", qtdHorasAlmoco = " + qtdHorasAlmoco + " ]";
     }
 
 }

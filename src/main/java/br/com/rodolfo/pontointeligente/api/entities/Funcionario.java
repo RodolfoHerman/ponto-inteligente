@@ -50,13 +50,13 @@ public class Funcionario implements Serializable{
     private String cpf;
 
     @Column(name = "valor_hora", nullable = false)
-    private BigDecimal valorHora;
+    private BigDecimal valorHora = new BigDecimal(0);
 
     @Column(name = "qtd_horas_trabalho_dia", nullable = false)
-    private Float qtdHorasTrabalhoDia;
+    private Float qtdHorasTrabalhoDia = Float.valueOf(0);
 
     @Column(name = "qtd_horas_almoco", nullable = false)
-    private Float qtdHorasAlmoco;
+    private Float qtdHorasAlmoco = Float.valueOf(0);
 
     @Enumerated(EnumType.STRING)
     @Column(name = "perfil", nullable = false)
@@ -293,13 +293,7 @@ public class Funcionario implements Serializable{
 
     @Override
     public String toString() {
-        
-        if(nome == null) {
-
-            return String.format("Funcionario [id = %d]", id);
-        }
-        
-        return String.format("Funcionario [id = %d, nome = %s, email = %s, senha = %s, cpf = %s, valorHora = %.2f, qtdHorasTrabalhoDia = %.2f, qtHorasAlmoco = %.2f, perfil = %s, dataCriacao = %ta, dataAtualizacao = %ta, empresa = %s]", id, nome, email, senha, cpf, valorHora.toString(), qtdHorasTrabalhoDia, qtdHorasAlmoco, perfil.toString(), dataCriacao, dataAtualizacao, empresa);
+        return "Funcionario [ id = " + id + ", nome = " + nome + ", email = " + email + ", senha = " + senha + ", cpf = " + cpf + ", valorHora = " + valorHora + ", qtdHorasTrabalhoDia = " + qtdHorasTrabalhoDia + ", qtdHorasAlmoco = " + qtdHorasAlmoco + ", perfil = " + perfil + ", dataCriacao = " + dataCriacao + ", dataAtualizacao = " + dataAtualizacao + ", empresa = " + empresa + " ]";
     }
 
 }

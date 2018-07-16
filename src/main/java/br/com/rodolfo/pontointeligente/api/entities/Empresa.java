@@ -147,7 +147,7 @@ public class Empresa implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("Empresa [id = %d, razaoSocial = %s, cnpj = %s, dataCriacao = %ta, dataAtualizacao = %ta]", id, razaoSocial, cnpj, dataCriacao, dataAtualizacao);
+        return "Empresa [ id = " + id + ", razaoSocial = " + razaoSocial + ", cnpj = " + cnpj + ", dataCriacao = " + dataCriacao + ", dataAtualizacao = " + dataAtualizacao + " ]";
     }
 
 }

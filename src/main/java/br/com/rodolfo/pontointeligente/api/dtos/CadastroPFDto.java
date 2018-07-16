@@ -171,7 +171,7 @@ public class CadastroPFDto {
 
     @Override
     public String toString() {
-        return String.format("FuncionarioDto [id = %s, nome = %s, email = %s, senha = %s, cpf = %s, valorHora = %s, qtdHoraTrabalhoDia = %s, qtdHoraAlmoco = %s, cnpj = %s]", id, nome, email, senha, cpf, valorHora, qtdHoraTrabalhoDia, qtdHoraAlmoco, cnpj);
+        return "CadastroPFDto [ id = " + id + ", nome = " + nome + ", email = " + email + ", senha = " + senha + ", cpf = " + cpf + ", valorHora = " + valorHora + ", qtdHoraTrabalhoDia = " + qtdHoraTrabalhoDia + ", qtdHoraAlmoco = " + qtdHoraAlmoco + ", cnpj = " + cnpj + " ]";
     }
 
 }
