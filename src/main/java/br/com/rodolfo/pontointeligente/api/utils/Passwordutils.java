@@ -13,6 +13,12 @@ public class Passwordutils {
 
     public Passwordutils() {}
     
+    /**
+     * Gerar senha com o BCrypt
+     * 
+     * @param senha
+     * @return String
+     */
     public static String gerarBCrypt(String senha) {
 
         if(senha == null) {
