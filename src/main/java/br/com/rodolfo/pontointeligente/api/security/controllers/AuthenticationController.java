@@ -81,8 +81,6 @@ public class AuthenticationController {
 
         UserDetails userDetails = this.userDetailsService.loadUserByUsername(jwtAuthenticationDto.getEmail());
 
-        log.error("Usuário não encontrado : {}", userDetails);
-
         String token = this.jwtTokenUtil.obterToken(userDetails);
 
         response.setData(new TokenDto(token));
